@@ -1,4 +1,7 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     background-image: url(../imagenes/pexels-lukas-mayer-785429.jpg);
     background-attachment: fixed;
@@ -9,45 +12,29 @@ body{
 .gris{
     color: rgba(136,136,136);
     font-size: 2.5rem;
+    padding: 1rem;
 }
 .blanco{
     font-size: 2.4rem;
+    padding: 1rem;
 }
-header{
-    display: block;
-    width: 100%;
-}
-a{
+
+.texto{
     text-decoration: none;
     color: white;
 }
-header h1{
-    text-align: left;
-    width:30%;
-    display:inline-block;
+.titulo{
+    margin-top: 12px;
+    margin-left: 2rem;
 }    
-header nav{
-    text-align: right;
-    display: inline-block;
-    width: 60%;
-    text-decoration: none;
-    list-style: none;
-}
-
-ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-  
-li{
-    padding: 3px;
-    margin: 2px;
-}
 ul li:hover{
     transform: translate(5px, 5px);
     cursor: pointer;
     transition: 1s;
-
+}
+.nombres{
+    margin-top: 4rem;
+    margin-left: 1rem;
 }
 .container{
     height: 250px;
@@ -57,6 +44,7 @@ ul li:hover{
     
 }  
 .tecnologias{
+    padding-top: 2rem;
     text-align: center;
     font-size: 2.0rem;
 }
@@ -70,6 +58,9 @@ h3{
     text-align: center;
     font-size: 2rem;
     margin-top: 40px;
+}
+.opacidad{
+    opacity: .5;
 }
 .grid{
     margin-top: 60px;
@@ -173,218 +164,39 @@ footer{
     text-align: center;
     text-decoration: none;
     margin-top: 30px;
+    cursor: pointer;
 }
+
 .links a{
     padding: 10px;
 }
-@media screen and (max-width: 500px){
-    header{
-        width: 100%;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    header h1{
-        text-align: center;
-        width: 100%;
-    }    
-    header nav{
-        width: 100%;
-        text-decoration: none;
-        list-style: none;
-    }
-    ul{
-        display: inline-block;
-        text-align: center;
-        margin-right: 10px;
-    }
-    li{
-        display: inline-block;
-        padding: 7px;
-        border: grey .5px solid;
-        border-radius: 10px;
-    
-    }
-
-    .container{
-        height: 250px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: nowrap;
-        
-    }  
-    .tecnologias{
-        text-align: center;
-        font-size: 2.0rem;
-    }  
-    .grid{
-        margin-top: 60px;
-        margin-bottom: 60px ;
-        width: 100%;
-        display: grid;
-        grid-template-areas:
-        "restaurantes comercios"
-        "fotografia abogados"
-        "profesiones eccomerce"
-        ;
-        justify-content: center;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 30% 30% 30%;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-    .restaurantes{
-        grid-area: restaurantes;
-        padding: 70px;
-        border-radius: 20px;
-        background-image: url(../imagenes/coffee-g184708770_640.jpg);
-        opacity: .5;
+.links:hover{
+    transform: scale(1.2);
     }
     
-    .comercios{
-        grid-area: comercios;
-        padding: 70px;
-        border-radius: 20px;
-        background-image: url(../imagenes/comercio.jpg);
-        opacity: .5;
-    }
-    .profesiones{
-        grid-area: profesiones;
-        background-image: url(../imagenes/profesiones.jpg);
-        opacity: .5;
-        padding: 70px;
-        border-radius: 20px;
-    
-    }
-    .fotografia{
-        grid-area: fotografia;
-        background-image: url(../imagenes/fotografia.jpg);
-        padding: 70px;
-        border-radius: 20px;
-        opacity: .5;
-    }
-    .abogados{
-        grid-area: abogados;
-        background-image: url(../imagenes/fotoabogados.jpg);
-        opacity: .5;
-        padding: 70px;
-        border-radius: 20px;
-    }
-    .eccomerce{
-        grid-area: eccomerce;
-        background-image: url(../imagenes/eccomerce.jpg);
-        opacity: .5;
-        padding: 70px;
-        border-radius: 20px;
-    
-    }
+.sobremi{
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+}
+.sobremi p{
+    line-height: 2.8;
+    justify-content: left;
+    margin-top: 7rem;
+}
+.setup{
+    justify-content: right;
+    border-radius: 5px;
+    margin-left: 7rem
+}
+.mainServicios{
+    padding-top: 6rem;
 }
 
-@media screen and (max-width: 950px)
+@media screen and (max-width: 992px)
 {
-    header{
-        width: 100%;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    header h1{
-        text-align: center;
-        width: 100%;
-    }    
-    header nav{
-        width: 100%;
-        text-decoration: none;
-        list-style: none;
-        text-align: center;
-    }
-    ul{
-        display: inline-block;
-        text-align: left;
-    }
-    li{
-        display: inline-block;
-        padding: 7px;
-        border: grey .5px solid;
-        border-radius: 10px;
-    
-    }
-
-    .container{
-        height: 250px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: nowrap;
-        
-    }  
-    .tecnologias{
-        text-align: center;
-        font-size: 2.0rem;
-    }  
-    .grid{
-        margin-top: 60px;
-        margin-bottom: 60px ;
-        width: 100%;
-        display: grid;
-        grid-template-areas:
-        "restaurantes comercios"
-        "fotografia abogados"
-        "profesiones eccomerce"
-        ;
-        justify-content: center;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 30% 30% 30%;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-    .restaurantes{
-        grid-area: restaurantes;
-        padding: 70px;
-        border-radius: 20px;
-        background-image: url(../imagenes/coffee-g184708770_640.jpg);
-        opacity: .5;
-    }
-    
-    .comercios{
-        grid-area: comercios;
-        padding: 70px;
-        border-radius: 20px;
-        background-image: url(../imagenes/comercio.jpg);
-        opacity: .5;
-    }
-    .profesiones{
-        grid-area: profesiones;
-        background-image: url(../imagenes/profesiones.jpg);
-        opacity: .5;
-        padding: 70px;
-        border-radius: 20px;
-    
-    }
-    .fotografia{
-        grid-area: fotografia;
-        background-image: url(../imagenes/fotografia.jpg);
-        padding: 70px;
-        border-radius: 20px;
-        opacity: .5;
-    }
-    .abogados{
-        grid-area: abogados;
-        background-image: url(../imagenes/fotoabogados.jpg);
-        opacity: .5;
-        padding: 70px;
-        border-radius: 20px;
-    }
-    .eccomerce{
-        grid-area: eccomerce;
-        background-image: url(../imagenes/eccomerce.jpg);
-        opacity: .5;
-        padding: 70px;
-        border-radius: 20px;
-    
-    }
-    
+    .sobremi{
+        display:block
+    } 
 }
