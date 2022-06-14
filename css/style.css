@@ -36,7 +36,7 @@ ul li:hover{
     margin-top: 4rem;
     margin-left: 1rem;
 }
-.container{
+.containerr{
     height: 250px;
     display: flex;
     justify-content:space-around;
